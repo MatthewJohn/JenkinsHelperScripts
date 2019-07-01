@@ -19,4 +19,4 @@ fi
 
 rm -f ${PROPERTIES_FILE}
 echo GIT_BRANCH_SHORT_NAME=$branch > ${PROPERTIES_FILE}
-echo GIT_TAG_NAME=$(echo $GIT_BRANCH | sed 's/.*tags\///g') > ${PROPERTIES_FILE}
+echo GIT_TAG_NAME=$(echo $GIT_BRANCH | sed 's/.*tags\///g') >> ${PROPERTIES_FILE}
